@@ -40,7 +40,13 @@ public class Main {
                     break;
                 case 3:
                     System.out.print("Informe o valor a transferir: ");
-                    saldoConta -= scanner.nextDouble();
+                    double transferencia = scanner.nextDouble();
+
+                    if (saldoConta >= transferencia) {
+                        saldoConta -= transferencia;
+                    } else {
+                        System.out.println("Saldo insuficiente");
+                    }
                     break;
                 case 4:
                     executarPrograma = false;
