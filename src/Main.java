@@ -37,6 +37,7 @@ public class Main {
                 case 2:
                     System.out.print("Informe o valor a receber: ");
                     saldoConta += scanner.nextDouble();
+                    System.out.println("Saldo atualizado: R$" + saldoConta);
                     break;
                 case 3:
                     System.out.print("Informe o valor a transferir: ");
